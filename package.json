@@ -13,17 +13,18 @@
     "gatsby-theme-codebushi": "1.0.0",
     "react": "^16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-device-detect": "^1.11.14",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
     "prettier": "^1.18.2"
   }
 }

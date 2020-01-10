@@ -5,16 +5,25 @@ const Footer = () => (
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+        <p className="mt-5">Muhnee is an exciting and simpler way to help you manage your money.</p>
       </div>
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Important Links</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
+            <a href="#" disabled>
+              Pricing
+            </a>
           </li>
           <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
+            <a href="https://www.notion.so/muhnee/Terms-of-Use-a10d1dd98f044d1b9799f39fca4e387a">
+              Terms &amp; Conditions
+            </a>
+          </li>
+          <li>
+            <a href="https://www.notion.so/Privacy-13ae75755f0e49c28a1a19a607931665">
+              Privacy Policy
+            </a>
           </li>
         </ul>
       </div>
@@ -22,13 +31,7 @@ const Footer = () => (
         <h2 className="text-lg font-semibold">Social Media</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
+            <a href="https://twitter.com/MuhneeApp">Twitter</a>
           </li>
         </ul>
       </div>
