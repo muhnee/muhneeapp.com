@@ -22,7 +22,7 @@ export default () => (
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">Muhnee</h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            An exciting and simpler way to help you manage your money.
+            An exciting and simple way to help you manage your money.
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Coming soon</Button>
@@ -78,12 +78,10 @@ export default () => (
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Analysis your spend and view it online
-          </h3>
+          <h3 className="text-3xl font-semibold leading-tight">Track, Analyse and Report</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once you track your spending, now analysis it directly over the web platform, and plan
-            for it in the next month. So now you can track control of your spending.
+            Once you start tracking your spending, you can analyse it directly over the web
+            platform, and plan for it in the next month.
           </p>
         </div>
       }
