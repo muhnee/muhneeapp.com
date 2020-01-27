@@ -24,11 +24,25 @@ export default () => (
           <p className="text-xl lg:text-2xl mt-6 font-light">
             An exciting and simple way to help you manage your money.
           </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Coming soon</Button>
+          <p
+            className="mt-8 md:mt-12"
+            style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}
+          >
+            <Button size="lg" style={{ minWidth: 280, height: '1.25rem', margin: '0.25rem' }}>
+              Web Platform
+            </Button>
+            <img src="/images/apple-app-store.svg" style={{ height: 60, margin: '0.25rem' }} />
+            <img src="/images/google-play-badge.png" style={{ height: 80, margin: '0.25rem' }} />
           </p>
           <p className="mt-4 text-gray-600">
             Recommended: Web Version: Google Chrome | iOS 10+ | Android 6+
+          </p>
+          <p className="mt-2 text-gray-600" style={{ fontSize: '0.75rem' }}>
+            App Store, iOS and iTunes Store are trademarks of Apple Inc., registered in the U.S. and
+            other countries.
+          </p>
+          <p className="mt-1 text-gray-600" style={{ fontSize: '0.75rem' }}>
+            Google Play and the Google Play logo are trademarks of Google LLC.
           </p>
         </div>
         <div className="lg:w-1/2">
