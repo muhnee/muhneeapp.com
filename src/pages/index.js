@@ -15,6 +15,9 @@ import HeroImage from '../svg/HeroImage';
 import Goals from '../svg/Goals';
 import MobileSpend from '../svg/MobileSpend';
 
+import AppStoreImage from '../images/AppleAppStore.svg';
+import GooglePlayStore from '../images/GooglePlayStore.svg';
+
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -26,13 +29,27 @@ export default () => (
           </p>
           <p
             className="mt-8 md:mt-12"
-            style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
           >
-            <Button size="lg" style={{ minWidth: 280, height: '1.25rem', margin: '0.25rem' }}>
+            <Button
+              size="lg"
+              style={{ minWidth: 200, height: '1.25rem', margin: '0.25rem 0.1rem' }}
+            >
               Web Platform
             </Button>
-            <img src="/images/apple-app-store.svg" style={{ height: 60, margin: '0.25rem' }} />
-            <img src="/images/google-play-badge.png" style={{ height: 80, margin: '0.25rem' }} />
+            <img
+              src={AppStoreImage}
+              style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
+            />
+            <img
+              src={GooglePlayStore}
+              style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
+            />
           </p>
           <p className="mt-4 text-gray-600">
             Recommended: Web Version: Google Chrome | iOS 10+ | Android 6+
