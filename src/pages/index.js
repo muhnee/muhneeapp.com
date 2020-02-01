@@ -11,12 +11,14 @@ import StatsBox from '../components/StatsBox';
 
 import customerData from '../data/customer';
 
-import HeroImage from '../svg/HeroImage';
 import Goals from '../svg/Goals';
 import MobileSpend from '../svg/MobileSpend';
 
 import AppStoreImage from '../images/AppleAppStore.svg';
 import GooglePlayStore from '../images/GooglePlayStore.svg';
+import HeroImage from '../images/muhnee_family.png';
+import AddTransactionsImage from '../images/add_transactions.png';
+import WebAppImage from '../images/web.png';
 
 export default () => (
   <Layout>
@@ -63,7 +65,7 @@ export default () => (
           </p>
         </div>
         <div className="lg:w-1/2">
-          <HeroImage />
+          <img src={HeroImage} width="100%" />
         </div>
       </div>
     </section>
@@ -96,14 +98,14 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Your spending, your way</h3>
+          <h3 className="text-3xl font-semibold leading-tight">On the go? No worries.</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Track your spending, by viewing and adding your day-to-day spend over our app, so there
-            is no need to visit our web version.
+            Track your spending, by viewing and adding your day-to-day spend (or income!) over our
+            app.
           </p>
         </div>
       }
-      secondarySlot={<MobileSpend />}
+      secondarySlot={<img src={AddTransactionsImage} width="100%" />}
     />
     <SplitSection
       reverseOrder
@@ -116,24 +118,24 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<Goals />}
+      secondarySlot={<img src={WebAppImage} width="100%" />}
     />
-    <section id="stats" className="py-20 lg:pt-32">
+    {/* <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">
         <LabelText className="text-gray-600">Our customers get results</LabelText>
         <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
           <div className="w-full sm:w-1/3">
             <StatsBox primaryText="+100%" secondaryText="Sample Stat" />
           </div>
-          {/* <div className="w-full sm:w-1/3">
+          <div className="w-full sm:w-1/3">
             <StatsBox primaryText="+100%" secondaryText="Stats Information" />
           </div>
           <div className="w-full sm:w-1/3">
             <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div> */}
+          </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What our users are saying</LabelText>
