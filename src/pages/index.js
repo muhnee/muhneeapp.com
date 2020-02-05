@@ -36,20 +36,28 @@ export default () => (
               justifyContent: 'center'
             }}
           >
-            <Button
-              size="lg"
-              style={{ minWidth: 200, height: '1.25rem', margin: '0.25rem 0.1rem' }}
-            >
-              Web Platform
-            </Button>
+            <a href="https://web.muhneeapp.com" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                style={{ minWidth: 200, height: '1.25rem', margin: '0.25rem 0.1rem' }}
+              >
+                Web Platform
+              </Button>
+            </a>
             <img
               src={AppStoreImage}
               style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
             />
-            <img
-              src={GooglePlayStore}
-              style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
-            />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.muhneeapp.muhnee.budget"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={GooglePlayStore}
+                style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
+              />
+            </a>
           </p>
           <p className="mt-4 text-gray-600">
             Recommended: Web Version: Google Chrome | iOS 10+ | Android 6+
