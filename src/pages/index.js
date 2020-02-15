@@ -19,6 +19,7 @@ import GooglePlayStore from '../images/GooglePlayStore.svg';
 import HeroImage from '../images/muhnee_family.png';
 import AddTransactionsImage from '../images/add_transactions.png';
 import WebAppImage from '../images/web.png';
+import RecurringImage from '../images/recurring.png';
 
 export default () => (
   <Layout>
@@ -33,7 +34,7 @@ export default () => (
               display: 'flex',
               flexWrap: 'wrap',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'space-evenly'
             }}
           >
             <a href="https://web.muhneeapp.com" target="_blank" rel="noopener noreferrer">
@@ -44,10 +45,10 @@ export default () => (
                 Web Platform
               </Button>
             </a>
-            <img
+            {/* <img
               src={AppStoreImage}
               style={{ minWidth: 200, height: 60, margin: '0.25rem 0.1rem' }}
-            />
+            /> */}
             <a
               href="https://play.google.com/store/apps/details?id=com.muhneeapp.muhnee.budget"
               target="_blank"
@@ -59,15 +60,17 @@ export default () => (
               />
             </a>
           </p>
+          <p className="mt-4 text-gray-600">iOS Version Coming Soon!</p>
           <p className="mt-4 text-gray-600">
             Recommended: Web Version: Google Chrome | iOS 10+ | Android 6+
           </p>
           <p className="mt-2 text-gray-600" style={{ fontSize: '0.75rem' }}>
-            App Store, iOS and iTunes Store are trademarks of Apple Inc., registered in the U.S. and
-            other countries.
+            MacBook, iPhone, App Store, iOS and iTunes Store are trademarks of Apple Inc.,
+            registered in the U.S. and other countries.
           </p>
           <p className="mt-1 text-gray-600" style={{ fontSize: '0.75rem' }}>
-            Google Play and the Google Play logo are trademarks of Google LLC.
+            Pixel™ phones and accessories, Google Play and the Google Play logo are trademarks of
+            Google LLC.
           </p>
         </div>
         <div className="lg:w-1/2">
@@ -117,10 +120,30 @@ export default () => (
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
+          <h3 className="text-3xl font-semibold leading-tight">Recurring payments?</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            We know that some of you have mobile plans, electricity, internet where you pay a fixed
+            amount per month, setting up recurring payments is no hassle. You can view your upcoming
+            scheduled payments too.
+          </p>
+          <p className="mt-1 text-gray-600" style={{ fontSize: '0.75rem' }}>
+            Recurring Payments are added to your existing transactions on the day of which it
+            reoccurs at 12am Australian Eastern Standard Time (AEST).
+          </p>
+        </div>
+      }
+      secondarySlot={<img src={RecurringImage} width="100%" />}
+    />
+    <SplitSection
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Track, Analyse and Report</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             Once you start tracking your spending, you can analyse it directly over the web
             platform, and plan for it in the next month.
+          </p>
+          <p className="mt-1 text-gray-600" style={{ fontSize: '0.75rem' }}>
+            Reporting platform is currently being built and will come soon.
           </p>
         </div>
       }
