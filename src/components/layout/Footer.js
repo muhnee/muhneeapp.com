@@ -32,6 +32,8 @@ const Footer = () => (
         <ul className="mt-4 leading-loose">
           <li>
             <a href="https://twitter.com/MuhneeApp">Twitter</a>
+            <a href="https://facebook.com/MuhneeApp">Facebook</a>
+            <a href="https://linkedin.com/company/Muhnee">LinkedIn</a>
           </li>
         </ul>
       </div>

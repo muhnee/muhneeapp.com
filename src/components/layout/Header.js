@@ -25,6 +25,9 @@ const Header = () => (
         <AnchorLink className="px-4" href="#testimonials">
           Testimonials
         </AnchorLink>
+        <AnchorLink className="px-4" href="https://medium.com/muhnee">
+          Blog
+        </AnchorLink>
       </div>
       {/* <div className="hidden md:block">
         <Button className="text-sm">Start Free Trial</Button>
